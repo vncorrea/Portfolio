@@ -3,6 +3,10 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { Header } from "./components/Header/Header";
+import { AboutMe } from "./components/AboutMe/AboutMe";
+import { Experiences } from "./components/Experiences/Experiences";
+import { Projects } from "./components/Projects/Projects";
+import { Footer } from "./components/Footer/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,6 +24,10 @@ export default function RootLayout({
     <html lang="pt-BR">
       <body className={inter.className}>
         <Header />
+        <Experiences />
+        <AboutMe />
+        <Projects />
+        <Footer />
       </body>
     </html>
   );

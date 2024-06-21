@@ -1,0 +1,14 @@
+.typed-cursor {
+  display: inline-block;
+  width: 2px;
+  border-left: 2px solid;
+  padding: 0;
+  margin-left: 2px;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
