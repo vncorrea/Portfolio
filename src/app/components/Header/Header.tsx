@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Typed, { TypedOptions } from "typed.js";
 import { useEffect, useRef } from "react";
+import "./Header.css";
 
 export function Header() {
   const typedTarget = useRef(null);
@@ -11,7 +12,7 @@ export function Header() {
         strings: ["Vinícius Corrêa Goulart"],
         typeSpeed: 100,
         backSpeed: 50,
-        loop: false,
+        loop: true,
       };
       new Typed(typedTarget.current, options);
     }
