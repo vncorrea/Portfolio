@@ -11,8 +11,7 @@ export function Header() {
       const options = {
         strings: ["Vinícius Corrêa Goulart"],
         typeSpeed: 100,
-        backSpeed: 50,
-        loop: true,
+        loop: false,
       };
       new Typed(typedTarget.current, options);
     }
