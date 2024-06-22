@@ -57,51 +57,53 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body className={inter.className}>
-        <motion.div
-          id="header"
-          variants={containerVariants}
-          initial="hidden"
-          animate={activeComponent === "" ? "visible" : "hidden"}
-          exit="exit"
-        >
-          <Header />
-        </motion.div>
-        <motion.div
-          id="experiences"
-          variants={containerVariants}
-          initial="hidden"
-          animate={activeComponent === "experiences" ? "visible" : "hidden"}
-          exit="exit"
-        >
-          <Experiences />
-        </motion.div>
-        <motion.div
-          id="aboutMe"
-          variants={containerVariants}
-          initial="hidden"
-          animate={activeComponent === "aboutMe" ? "visible" : "hidden"}
-          exit="exit"
-        >
-          <AboutMe />
-        </motion.div>
-        <motion.div
-          id="projects"
-          variants={containerVariants}
-          initial="hidden"
-          animate={activeComponent === "projects" ? "visible" : "hidden"}
-          exit="exit"
-        >
-          <Projects />
-        </motion.div>
-        <motion.div
-          id="footer"
-          variants={containerVariants}
-          initial="hidden"
-          animate="visible"
-          exit="exit"
-        >
-          <Footer />
-        </motion.div>
+        <div style={containerStyle}>
+          <motion.div
+            id="header"
+            variants={containerVariants}
+            initial="hidden"
+            animate={activeComponent === "" ? "visible" : "hidden"}
+            exit="exit"
+          >
+            <Header />
+          </motion.div>
+          <motion.div
+            id="experiences"
+            variants={containerVariants}
+            initial="hidden"
+            animate={activeComponent === "experiences" ? "visible" : "hidden"}
+            exit="exit"
+          >
+            <Experiences />
+          </motion.div>
+          <motion.div
+            id="aboutMe"
+            variants={containerVariants}
+            initial="hidden"
+            animate={activeComponent === "aboutMe" ? "visible" : "hidden"}
+            exit="exit"
+          >
+            <AboutMe />
+          </motion.div>
+          <motion.div
+            id="projects"
+            variants={containerVariants}
+            initial="hidden"
+            animate={activeComponent === "projects" ? "visible" : "hidden"}
+            exit="exit"
+          >
+            <Projects />
+          </motion.div>
+          <motion.div
+            id="footer"
+            variants={containerVariants}
+            initial="hidden"
+            animate="visible"
+            exit="exit"
+          >
+            <Footer />
+          </motion.div>
+        </div>
       </body>
     </html>
   );

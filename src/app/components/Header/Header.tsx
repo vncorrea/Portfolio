@@ -18,7 +18,7 @@ export function Header() {
   }, []);
 
   return (
-    <header className="bg-black text-white p-4 h-screen flex flex-col justify-center items-center">
+    <header className="text-white p-4 h-screen flex flex-col justify-center items-center">
       <div>
         <span className="text-3xl">Olá, sou o</span>
       </div>

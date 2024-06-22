@@ -5,7 +5,7 @@ export function AboutMe() {
   return (
     <section
       id="aboutMe"
-      className="bg-black text-white p-4 h-screen flex flex-row justify-evenly items-center"
+      className="text-white p-4 h-screen flex flex-row justify-evenly items-center"
     >
       <div>
         <div id="nome" className="mb-5">

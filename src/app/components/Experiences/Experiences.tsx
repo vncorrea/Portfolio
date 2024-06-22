@@ -12,7 +12,7 @@ export function Experiences() {
   return (
     <section
       id="experiences"
-      className="bg-black text-white p-4 h-screen flex flex-col justify-center items-center"
+      className="text-white p-4 h-screen flex flex-col justify-center items-center"
     >
       <VerticalTimeline>
         <VerticalTimelineElement
