@@ -31,7 +31,7 @@ export function Experiences() {
       </VerticalTimeline>
       <VerticalTimeline>
         <VerticalTimelineElement
-          className="vertical-timeline-element--work"
+          className="vertical-timeline-element--work font-bold"
           date="2022 - presente"
           iconStyle={{ background: "black", color: "white" }}
           icon={<FaBookOpen />}
@@ -41,7 +41,7 @@ export function Experiences() {
             Universidade de Ribeirão Preto
           </h3>
           <h4 className="vertical-timeline-element-subtitle">Ribeirão Preto</h4>
-          <p className="decoration-blue-500">Engenharia de software</p>
+          <p className="decoration-blue-500">Engenharia de Software</p>
         </VerticalTimelineElement>
       </VerticalTimeline>
     </section>

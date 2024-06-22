@@ -6,10 +6,10 @@ import "./globals.css";
 import { Header } from "./components/Header/Header";
 import { AboutMe } from "./components/AboutMe/AboutMe";
 import { Experiences } from "./components/Experiences/Experiences";
-import { Projects } from "./components/Projects/Projects";
 import { Footer } from "./components/Footer/Footer";
 import { motion } from "framer-motion";
 import ParticlesComponents from "./components/particles";
+import Projects from "./components/Projects/Projects";
 
 const inter = Inter({ subsets: ["latin"] });
 
