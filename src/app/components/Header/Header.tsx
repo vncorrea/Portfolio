@@ -9,7 +9,7 @@ export function Header() {
   useEffect(() => {
     if (typedTarget.current) {
       const options = {
-        strings: ["Vinícius Corrêa Goulart"],
+        strings: ["Vinícius Corrêa"],
         typeSpeed: 100,
         loop: false,
       };

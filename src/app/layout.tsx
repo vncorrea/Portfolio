@@ -9,17 +9,22 @@ import { Experiences } from "./components/Experiences/Experiences";
 import { Projects } from "./components/Projects/Projects";
 import { Footer } from "./components/Footer/Footer";
 import { motion } from "framer-motion";
+import ParticlesComponents from "./components/particles";
 
 const inter = Inter({ subsets: ["latin"] });
 
+const mainContentStyle = {
+  zIndex: 1,
+  position: "relative",
+};
 const containerVariants = {
   hidden: { opacity: 0 },
   visible: { opacity: 1, transition: { duration: 0.5 } },
   exit: { opacity: 0, transition: { duration: 0.5 } },
 };
 
-const containerStyle = {
-  backgroundColor: "black",
+const particlesStyle = {
+  overflow: "hidden",
 };
 
 export default function RootLayout({
@@ -57,7 +62,10 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body className={inter.className}>
-        <div style={containerStyle}>
+        <div style={particlesStyle}>
+          <ParticlesComponents id="particles" />
+        </div>
+        <div style={mainContentStyle}>
           <motion.div
             id="header"
             variants={containerVariants}

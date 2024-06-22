@@ -5,9 +5,9 @@ export function AboutMe() {
   return (
     <section
       id="aboutMe"
-      className="text-white p-4 h-screen flex flex-row justify-evenly items-center"
+      className="text-white p-4 h-screen flex flex-col md:flex-row justify-evenly items-center"
     >
-      <div>
+      <div className="mb-5">
         <div id="nome" className="mb-5">
           <h1 className="font-bold text-2xl">Nome</h1>
           <span className="text-center text-xl mt-4">
@@ -38,7 +38,7 @@ export function AboutMe() {
       <div className="w-full max-w-md">
         <SkillBar skill="HTML5" percentage={100} />
         <SkillBar skill="CSS3" percentage={95} />
-        <SkillBar skill="JavaScript" percentage={85} />
+        <SkillBar skill="JavaScript" percentage={90} />
         <SkillBar skill="Laravel" percentage={90} />
         <SkillBar skill="PHP" percentage={85} />
         <SkillBar skill="jQuery" percentage={85} />
