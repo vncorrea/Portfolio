@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Typed, { TypedOptions } from "typed.js";
 import { useEffect, useRef } from "react";
-import "./Header.css";
 
 export function Header() {
   const typedTarget = useRef(null);
@@ -9,16 +8,17 @@ export function Header() {
   useEffect(() => {
     if (typedTarget.current) {
       const options = {
-        strings: ["Vinícius Corrêa Goulart"],
+        strings: ["Vinícius Corrêa"],
         typeSpeed: 100,
         loop: false,
+        showCursor: false,
       };
       new Typed(typedTarget.current, options);
     }
   }, []);
 
   return (
-    <header className="bg-black text-white p-4 h-screen flex flex-col justify-center items-center">
+    <header className="text-white p-4 h-screen flex flex-col justify-center items-center">
       <div>
         <span className="text-3xl">Olá, sou o</span>
       </div>
