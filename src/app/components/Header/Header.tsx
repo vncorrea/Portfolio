@@ -8,7 +8,7 @@ export function Header() {
   useEffect(() => {
     if (typedTarget.current) {
       const options = {
-        strings: ["Vinícius Corrêa"],
+        strings: ["Vinícius Corrêa Goulart"],
         typeSpeed: 100,
         loop: false,
         showCursor: false,
@@ -23,7 +23,7 @@ export function Header() {
         <span className="text-3xl">Olá, sou o</span>
       </div>
 
-      <div className="mt-3">
+      <div className="my-3 text-center">
         <span className="text-5xl" ref={typedTarget}></span>
       </div>
 

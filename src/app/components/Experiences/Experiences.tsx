@@ -16,7 +16,7 @@ export function Experiences() {
     >
       <VerticalTimeline>
         <VerticalTimelineElement
-          className="vertical-timeline-element--work"
+          className="vertical-timeline-element--work font-bold"
           date="2023 - presente"
           iconStyle={{ background: "black", color: "white" }}
           icon={<FaNetworkWired />}

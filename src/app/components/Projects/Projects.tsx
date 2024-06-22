@@ -18,12 +18,11 @@ const Projects = () => {
   const cardInfos = [
     {
       id: "card1",
-      title: "VineTickets",
+      title: "vineTickets",
       description:
         "Esse é o site VineTickets. Nesta versão foi feito com Laravel, React, Tailwind e PostgreSQL. O site é um marketplace de ingressos para eventos.",
       backgroundImageBack: "../../assets/site-teste.png",
-      backgroundImageFront:
-        "https://d3jdy5kagtp3z4.cloudfront.net/images/v2/macbook-flat-white.png",
+      backgroundImageFront: "../../assets/logo.png",
       icons: [
         { src: "/assets/laravel.png", alt: "Laravel" },
         { src: "/assets/react.png", alt: "React" },
@@ -32,7 +31,7 @@ const Projects = () => {
     },
     {
       id: "card2",
-      title: "VineTickets App",
+      title: "vineTickets App",
       description:
         "Esse é o aplicativo VineTickets. VineTickets é um marketplace de ingressos para eventos. Foi utilizado as APIs do site VineTickets.",
       backgroundImageBack: "../../assets/site-teste.png",
@@ -62,7 +61,7 @@ const Projects = () => {
   ];
 
   return (
-    <div className="flex flex-col lg:flex-row items-center justify-center h-[800px] cursor-pointer p-[8rem]">
+    <div className="flex flex-col lg:flex-row items-center justify-center h-[100%] cursor-pointer p-[8rem]">
       {cardInfos.map((cardInfo) => (
         <Card
           key={cardInfo.id}
