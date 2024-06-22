@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { motion } from "framer-motion";
-import "./Projects.css";
+import "./Projects.css"; // Importe o componente ProjectsCard
+import Card from "./Card";
 
 const Projects = () => {
   const [flips, setFlips] = useState<{
@@ -15,38 +15,65 @@ const Projects = () => {
     setFlips((prevFlips) => ({ ...prevFlips, [cardId]: !prevFlips[cardId] }));
   }
 
-  return (
-    <div className="flex flex-col lg:flex-row items-center justify-center h-[800px] cursor-pointer">
-      {["card1", "card2", "card3"].map((cardId, index) => (
-        <div
-          key={cardId}
-          className="flip-card w-[600px] h-[360px] rounded-md mx-2 mb-4"
-          onClick={() => handleFlip(cardId)}
-        >
-          <motion.div
-            className="flip-card-inner w-[100%] h-[100%]"
-            initial={false}
-            animate={{ rotateY: flips[cardId] ? 180 : 0 }}
-            transition={{ duration: 0.6 }}
-          >
-            <div
-              className="flip-card-front w-[100%] h-[100%] bg-cover border-[1px] text-white rounded-lg p-4"
-              style={{
-                backgroundImage: `url(https://d3jdy5kagtp3z4.cloudfront.net/images/v2/macbook-flat-white.png)`,
-              }}
-            ></div>
+  const cardInfos = [
+    {
+      id: "card1",
+      title: "VineTickets",
+      description:
+        "Esse é o site VineTickets. Nesta versão foi feito com Laravel, React, Tailwind e PostgreSQL. O site é um marketplace de ingressos para eventos.",
+      backgroundImageBack: "../../assets/site-teste.png",
+      backgroundImageFront:
+        "https://d3jdy5kagtp3z4.cloudfront.net/images/v2/macbook-flat-white.png",
+      icons: [
+        { src: "/assets/laravel.png", alt: "Laravel" },
+        { src: "/assets/react.png", alt: "React" },
+        { src: "/assets/tailwind.png", alt: "Tailwind" },
+      ],
+    },
+    {
+      id: "card2",
+      title: "VineTickets App",
+      description:
+        "Esse é o aplicativo VineTickets. VineTickets é um marketplace de ingressos para eventos. Foi utilizado as APIs do site VineTickets.",
+      backgroundImageBack: "../../assets/site-teste.png",
+      backgroundImageFront:
+        "https://d3jdy5kagtp3z4.cloudfront.net/images/v2/macbook-flat-white.png",
+      icons: [
+        { src: "/assets/tailwind.png", alt: "Tailwind" },
+        { src: "/assets/react.png", alt: "React" },
+        { src: "/assets/expo.png", alt: "Expo" },
+        { src: "/assets/postgresql.png", alt: "PostgreSQL" },
+      ],
+    },
+    {
+      id: "card3",
+      title: "A definir",
+      description: "A definir, por favor volte mais tarde.",
+      backgroundImageBack: "../../assets/site-teste.png",
+      backgroundImageFront:
+        "https://d3jdy5kagtp3z4.cloudfront.net/images/v2/macbook-flat-white.png",
+      icons: [
+        { src: "/assets/nodejs.png", alt: "NodeJS" },
+        { src: "/assets/react.png", alt: "React" },
+        { src: "/assets/postgresql.png", alt: "PostgreSQL" },
+        { src: "/assets/tailwind.png", alt: "Tailwind" },
+      ],
+    },
+  ];
 
-            <div
-              className="flip-card-back w-[100%] h-[100%] bg-cover border-[1px] text-white rounded-lg p-4"
-              style={{
-                backgroundImage: `url(https://d3jdy5kagtp3z4.cloudfront.net/images/v2/macbook-flat-white.png)`,
-              }}
-            >
-              <h1 className="text-2xl font-bold">Site VineTickets</h1>
-              <p>Site teste {index + 1}</p>
-            </div>
-          </motion.div>
-        </div>
+  return (
+    <div className="flex flex-col lg:flex-row items-center justify-center h-[800px] cursor-pointer p-[8rem]">
+      {cardInfos.map((cardInfo) => (
+        <Card
+          key={cardInfo.id}
+          title={cardInfo.title}
+          description={cardInfo.description}
+          backgroundImageFront={cardInfo.backgroundImageFront}
+          backgroundImageBack={cardInfo.backgroundImageBack}
+          icons={cardInfo.icons}
+          isFlipped={flips[cardInfo.id]}
+          onFlip={() => handleFlip(cardInfo.id)}
+        />
       ))}
     </div>
   );
