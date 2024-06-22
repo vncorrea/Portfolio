@@ -13,7 +13,7 @@ import ParticlesComponents from "./components/particles";
 
 const inter = Inter({ subsets: ["latin"] });
 
-const mainContentStyle = {
+const mainContentStyle: React.CSSProperties = {
   zIndex: 1,
   position: "relative",
 };
