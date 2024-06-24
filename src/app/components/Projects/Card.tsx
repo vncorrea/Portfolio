@@ -54,7 +54,9 @@ const Card: React.FC<CardProps> = ({
               </div>
             ))}
           </div>
-          <h1 className="text-2xl font-bold text-center mb-5">{title}</h1>
+          <h1 className="text-2xl font-bold text-center mb-5 text-sky-300">
+            {title}
+          </h1>
           <p className="text-center text-xl">{description}</p>
         </div>
       </motion.div>

@@ -24,7 +24,7 @@ export function Header() {
       </div>
 
       <div className="my-3 text-center">
-        <span className="text-5xl" ref={typedTarget}></span>
+        <span className="text-5xl text-sky-300" ref={typedTarget}></span>
       </div>
 
       <div className="mt-5 flex justify-center gap-6">
