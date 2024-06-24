@@ -27,6 +27,7 @@ const Projects = () => {
         { src: "/assets/laravel.png", alt: "Laravel" },
         { src: "/assets/react.png", alt: "React" },
         { src: "/assets/tailwind.png", alt: "Tailwind" },
+        { src: "/assets/postgresql.png", alt: "PostgreSQL" },
       ],
     },
     {
@@ -41,7 +42,6 @@ const Projects = () => {
         { src: "/assets/tailwind.png", alt: "Tailwind" },
         { src: "/assets/react.png", alt: "React" },
         { src: "/assets/expo.png", alt: "Expo" },
-        { src: "/assets/postgresql.png", alt: "PostgreSQL" },
       ],
     },
     {
