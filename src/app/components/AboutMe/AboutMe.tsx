@@ -37,13 +37,13 @@ export function AboutMe() {
       </div>
       <div className="w-full max-w-md">
         <SkillBar skill="HTML5" percentage={100} />
-        <SkillBar skill="CSS3" percentage={95} />
-        <SkillBar skill="JavaScript" percentage={90} />
+        <SkillBar skill="CSS3" percentage={100} />
+        <SkillBar skill="JavaScript" percentage={95} />
         <SkillBar skill="Laravel" percentage={90} />
         <SkillBar skill="PHP" percentage={85} />
         <SkillBar skill="jQuery" percentage={85} />
-        <SkillBar skill="PostgreSQL" percentage={70} />
-        <SkillBar skill="ReactJS" percentage={70} />
+        <SkillBar skill="PostgreSQL" percentage={80} />
+        <SkillBar skill="ReactJS" percentage={80} />
       </div>
     </section>
   );
